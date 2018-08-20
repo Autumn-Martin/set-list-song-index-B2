@@ -5,16 +5,20 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway|Shrikhand" rel="stylesheet">
   </head>
   <body>
-    <h1> Playlist </h1>
-    <div class="songs-container">
+    <header>
+      <h1> Songs </h1>
+    </header>
+    <section>
       <% @songs.each do |song| %>
-      <ul>
-        <img src="vinyl.jpg" alt="Vinyl Photo by Adrian Korte"/>
-        <li><%= song.title %></li>
-        <li><%= song.length %> seconds</li>
-        <li>Play Count: <%= song.play_count %></li>
-      </ul>
+      <div id="song-<%= song.id %>" class="songs-container">
+        <div class="col">
+            <img src="images/analog-audio-cassette.jpg" alt="Vinyl Photo by Adrian Korte">
+            <p><%= song.title %></p>
+            <p><%= song.length %> seconds</p>
+            <p>Play Count: <%= song.play_count %></p>
+        </div>
+      </div>
       <% end %>
-    </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,42 @@
+body {
+  background: #E5FFF2;
+}
+
+header {
+  height: 50px;
+  padding: 0% 7%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+img {
+  height: 175px;
+  width: 275px;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Shrikhand';
+}
+
+.songs-container {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 2% 2%;
+  background: #DFEBE4;
+  padding: 20px 20px;
+  border-radius: 5%;
+  font-family: 'Raleway';
+}
+
+section {
+  text-align: center;
+}
